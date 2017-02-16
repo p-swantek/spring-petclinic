@@ -58,7 +58,7 @@ public class ValidatorSpockTests extends Specification {
       constraintViolations.size() == 1;
       ConstraintViolation<Person> violation = constraintViolations.iterator().next();
 	  violation.getPropertyPath().toString().equals("firstName");
-	  violation.getMessage().equals("may not be null");
+	  violation.getMessage().equals("may not be empty");
 	}
 	
 	// 3. validate a against a valid first name (non-empty, non-null value).
@@ -110,7 +110,7 @@ public class ValidatorSpockTests extends Specification {
       constraintViolations.size() == 1;
       ConstraintViolation<Person> violation = constraintViolations.iterator().next();
 	  violation.getPropertyPath().toString().equals("lastName");
-	  violation.getMessage().equals("may not be null");
+	  violation.getMessage().equals("may not be empty");
 	}
 	
 	
