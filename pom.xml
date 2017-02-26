@@ -33,7 +33,7 @@
     <cobertura.version>2.7</cobertura.version>
 
   </properties>
-
+ <!-- 
 	<repositories>
 		<repository>
 			<id>nexus</id>
@@ -51,7 +51,7 @@
 			<url>http://localhost:8081/repository/maven-releases</url>
 		</repository>
 	</distributionManagement>
-
+  -->
 
   <dependencies>
     <!-- Spring and Spring Boot dependencies -->
